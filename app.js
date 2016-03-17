@@ -95,8 +95,9 @@ if (answer5 === 'yes' || answer5 === 'y') {
   console.log('invalid response given');
 };
 
-for (var i = 0; i < 4 && numMotorcycles != 2 ; i++) {
+for (var i = 0; i < 4 && numMotorcycles !== 2 ; i++) {
   var numMotorcycles = prompt('How many motorcycles have I owned?');
+  numMotorcycles = parseInt(numMotorcycles);
   if (numMotorcycles < 2) {
     alert('Too low!');
     console.log('Guess too low');
