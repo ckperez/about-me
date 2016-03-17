@@ -113,7 +113,7 @@ for (var i = 0; i < 4 && numMotorcycles != 2 ; i++) {
   }
 };
 
-alert('You got ' + correctAnswers.length + ' out of 7 questions right.');
+alert('You got ' + correctAnswers.length + ' out of 7 questions right. Nice job, ' + userName);
 
 var favGames = [];
 for (var i = 0; i < 5; i++) {
