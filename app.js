@@ -7,7 +7,7 @@ var promptQ2 = 'Do you think my motorcycle is a sweet, loud, black-and-chrome, A
 var promptQ3 = 'Had I been to Washington before coming here for Code Fellows?';
 var promptQ4 = 'Am I over 30 years old?';
 var promptQ5 = 'Is Conan a Barbarian?';
-var promptQ6 = 'So, ' + userName + ', is crushing your enemies, seeing them driven before you, and hearing the lamentations of their women best in life?';
+var promptQ6 = 'So, is crushing your enemies, seeing them driven before you, and hearing the lamentations of their women best in life?';
 var promptQ7 = 'How many motorcycles have I owned?';
 
 var answerOne = document.getElementById('ans1');
@@ -100,7 +100,7 @@ function ask4(){
   if (answer4 === 'yes' || answer4 === 'y') {
     //alert('Well, ' + userName + ', I had! Many, many times.');
     //console.log('user answered yes. Wrong.');
-    answerFour.textContent = 'Well, ' + userName + ', I had! Many, many times.';
+    answerFour.textContent = 'Well, ' + userName + ', I am not. I do not blame you. The beard is misleading.';
     responsesArray.push(answerFour.textContent);
   } else if (answer4 === 'no' || answer4 === 'n') {
     //alert('Correct, ' + userName + '.');
