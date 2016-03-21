@@ -1,4 +1,5 @@
 var correctAnswers = [];
+
 var questionsArray = [];
 var responsesArray = [];
 var promptQ1 = 'Do you think I have a car?';
@@ -20,8 +21,6 @@ var answerSeven = document.getElementById('ans7');
 var userName = prompt('Hello there. What is your name?');
 alert('Well, ' + userName + ', Enjoy the following guessing game...');
 console.log('Aked user for name. Got ' + userName);
-
-
 
 function ask1(){
   var answer1 = prompt(promptQ1);
@@ -152,10 +151,12 @@ function ask5(){
     //console.log('user answered no. Game over.');
     answerFive.textContent = 'Wrong, ' + userName + '. Even if you were thinking of the late-night TV host.';
     responsesArray.push(answerFive.textContent);
+
   } else {
     alert('You know that was invalid. You are done.');
     console.log('invalid response given');
   };
+
 };
 
 function ask7(){
@@ -204,4 +205,5 @@ for (var i = 0; i < 5; i++) {
 
   favGames.push(prompt('Tell me one of your five favorite games?'));
 }
+
 alert('So... your favorite games are ' + favGames.join(', ') + '.'); */
