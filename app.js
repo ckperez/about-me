@@ -7,7 +7,7 @@ var promptQ2 = 'Do you think my motorcycle is a sweet, loud, black-and-chrome, A
 var promptQ3 = 'Had I been to Washington before coming here for Code Fellows?';
 var promptQ4 = 'Am I over 30 years old?';
 var promptQ5 = 'Is Conan a Barbarian?';
-var promptQ6 = userName + ', is crushing your enemies, seeing them driven before you, and hearing the lamentations of their women best in life?';
+var promptQ6 = 'So, ' + userName + ', is crushing your enemies, seeing them driven before you, and hearing the lamentations of their women best in life?';
 var promptQ7 = 'How many motorcycles have I owned?';
 
 var answerOne = document.getElementById('ans1');
@@ -132,7 +132,7 @@ function ask5(){
       console.log('used str.toLowerCase() to avoid case sensitivity issues in responses.');
       if (bonus === 'yes' || bonus === 'y') {
         //alert(userName + ', you are so right. Though the open steppe, fleet horse, falcons at your wrist, and the wind in your hair is also good.');
-        answerSix.textContent = 'So, ' + userName + ', you are so right. Though the open steppe, fleet horse, falcons at your wrist, and the wind in your hair is also good.';
+        answerSix.textContent = 'Oh, ' + userName + ', you are so right. Though the open steppe, fleet horse, falcons at your wrist, and the wind in your hair is also good.';
         responsesArray.push(answerSix.textContent);
         correctAnswers.push(true);
         //console.log('user said yes! Going to learn kung fu');
