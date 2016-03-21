@@ -132,7 +132,7 @@ function ask5(){
       console.log('used str.toLowerCase() to avoid case sensitivity issues in responses.');
       if (bonus === 'yes' || bonus === 'y') {
         //alert(userName + ', you are so right. Though the open steppe, fleet horse, falcons at your wrist, and the wind in your hair is also good.');
-        answerSix.textContent = userName + ', you are so right. Though the open steppe, fleet horse, falcons at your wrist, and the wind in your hair is also good.';
+        answerSix.textContent = 'So, ' + userName + ', you are so right. Though the open steppe, fleet horse, falcons at your wrist, and the wind in your hair is also good.';
         responsesArray.push(answerSix.textContent);
         correctAnswers.push(true);
         //console.log('user said yes! Going to learn kung fu');
