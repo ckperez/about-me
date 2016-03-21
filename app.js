@@ -160,8 +160,9 @@ function ask5(){
 };
 
 function ask7(){
+  var numMotorcycles;
   for (var i = 0; i < 4 && numMotorcycles !== 2 ; i++) {
-    var numMotorcycles = prompt(promptQ7);
+    numMotorcycles = prompt(promptQ7);
     questionsArray.push(promptQ7);
     numMotorcycles = parseInt(numMotorcycles);
     if (numMotorcycles < 2) {
