@@ -21,12 +21,7 @@ var userName = prompt('Hello there. What is your name?');
 alert('Well, ' + userName + ', Enjoy the following guessing game...');
 console.log('Aked user for name. Got ' + userName);
 
-ask1();
-ask2();
-ask3();
-ask4();
-ask5();
-ask7();
+
 
 function ask1(){
   var answer1 = prompt(promptQ1);
@@ -190,6 +185,13 @@ function ask7(){
     }
   };
 };
+
+ask1();
+ask2();
+ask3();
+ask4();
+ask5();
+ask7();
 
 console.table(questionsArray);
 console.table(responsesArray);
