@@ -30,12 +30,12 @@ function ask1(){
 
   if (answer1 === 'yes' || answer1 === 'y') {
     //alert('Wrong, ' + userName + '. I used to have one, but I sold it last month.');
-    //console.log('user answered yes. Wrong.');
+    console.log('user answered yes. Wrong.');
     answerOne.textContent = 'Wrong, ' + userName + '. I used to have one, but I sold it last month.';
     responsesArray.push(answerOne.textContent);
   } else if (answer1 === 'no' || answer1 === 'n') {
     //alert('Correct, ' + userName + '. I have a motorcycle, though.');
-    //console.log('user answered no. Correct.');
+    console.log('user answered no. Correct.');
     answerOne.textContent = 'Correct, ' + userName + '. I have a motorcycle, though.';
     responsesArray.push(answerOne.textContent);
     correctAnswers.push(true);
@@ -53,12 +53,12 @@ function ask2(){
 
   if (answer2 === 'yes' || answer2 === 'y') {
     //alert('Wrong, ' + userName + '. It is white and Italian and beautiful. I do like a good Harley, though.');
-    //console.log('user answered yes. Wrong.');
+    console.log('user answered yes. Wrong.');
     answerTwo.textContent = 'Wrong, ' + userName + '. It is white and Italian and beautiful. I do like a good Harley, though.';
     responsesArray.push(answerTwo.textContent);
   } else if (answer2 === 'no' || answer2 === 'n') {
     //alert('Correct, ' + userName + '. It is Italian, in fact. Moto Guzzi V7. Look it up.');
-    //console.log('user answered no. Correct.');
+    console.log('user answered no. Correct.');
     answerTwo.textContent = 'Correct, ' + userName + '. It is Italian, in fact. Moto Guzzi V7. Look it up.';
     responsesArray.push(answerTwo.textContent);
     correctAnswers.push(true);
@@ -76,13 +76,13 @@ function ask3(){
 
   if (answer3 === 'yes' || answer3 === 'y') {
     //alert('Correct, ' + userName + '. This is probably my 20th time here.');
-    //console.log('used answered yes. Correct.');
+    console.log('used answered yes. Correct.');
     answerThree.textContent = 'Correct, ' + userName + '. This is probably my 20th time here.';
     responsesArray.push(answerThree.textContent);
     correctAnswers.push(true);
   } else if (answer3 === 'no' || answer3 === 'n') {
     //alert('Well, ' + userName + ', I had! Many, many times.');
-    //console.log('user answered no. Wrong.');
+    console.log('user answered no. Wrong.');
     answerThree.textContent = 'Well, ' + userName + ', I had! Many, many times.';
     responsesArray.push(answerThree.textContent);
   } else {
@@ -99,12 +99,12 @@ function ask4(){
 
   if (answer4 === 'yes' || answer4 === 'y') {
     //alert('Well, ' + userName + ', I had! Many, many times.');
-    //console.log('user answered yes. Wrong.');
+    console.log('user answered yes. Wrong.');
     answerFour.textContent = 'Well, ' + userName + ', I am not. I do not blame you. The beard is misleading.';
     responsesArray.push(answerFour.textContent);
   } else if (answer4 === 'no' || answer4 === 'n') {
     //alert('Correct, ' + userName + '.');
-    //console.log('user answered no. Correct.');
+    console.log('user answered no. Correct.');
     answerFour.textContent = 'Correct, ' + userName + '.';
     responsesArray.push(answerFour.textContent);
     correctAnswers.push(true);
@@ -135,10 +135,10 @@ function ask5(){
         answerSix.textContent = 'Oh, ' + userName + ', you are so right. Though the open steppe, fleet horse, falcons at your wrist, and the wind in your hair is also good.';
         responsesArray.push(answerSix.textContent);
         correctAnswers.push(true);
-        //console.log('user said yes! Going to learn kung fu');
+        console.log('user said yes! Going to learn kung fu');
       } else if (bonus === 'no' || bonus === 'n') {
         //alert('Wrong, ' + userName + '! Go ask Conan what is best in life.');
-        //console.log('user said no. user is lame.');
+        console.log('user said no. user is lame.');
         answerSix.textContent = 'Wrong, ' + userName + '! Go ask Conan what is best in life.';
         responsesArray.push(answerSix.textContent);
       } else {
@@ -148,7 +148,7 @@ function ask5(){
     };
   } else if (answer5 === 'no' || answer5 === 'n') {
     //alert('Wrong, ' + userName + '. Even if you were thinking of the late-night TV host.');
-    //console.log('user answered no. Game over.');
+    console.log('user answered no. Game over.');
     answerFive.textContent = 'Wrong, ' + userName + '. Even if you were thinking of the late-night TV host.';
     responsesArray.push(answerFive.textContent);
 
@@ -168,19 +168,19 @@ function ask7(){
     if (numMotorcycles < 2) {
       alert('Too low!');
       responsesArray.push('Too low!');
-    //  console.log('Guess too low');
+      console.log('Guess too low');
 
     } else if (numMotorcycles > 2) {
       alert('Too high!');
       responsesArray.push('Too high!');
-    //  console.log('Guess too high');
+      console.log('Guess too high');
     } else if (isNaN(numMotorcycles)) {
       alert('That does not make sense.');
       responsesArray.push('invalid');
-    //  console.log('Guess not a number');
+      console.log('Guess not a number');
     } else {
-    //  alert('Correct!');
-    //  console.log('Correct. Loop should stop.');
+      alert('Correct!');
+      console.log('Correct. Loop should stop.');
       answerSeven.textContent = 'Correct.';
       responsesArray.push(answerSeven.textContent);
       correctAnswers.push(true);
@@ -199,12 +199,12 @@ console.table(questionsArray);
 console.table(responsesArray);
 console.log(correctAnswers.length);
 
-/*alert('You got ' + correctAnswers.length + ' out of 7 questions right. Nice job, ' + userName);
+alert('You got ' + correctAnswers.length + ' out of ' + questionsArray.length + ' questions right. Nice job, ' + userName);
 
-var favGames = [];
-for (var i = 0; i < 5; i++) {
-
-  favGames.push(prompt('Tell me one of your five favorite games?'));
-}
-
-alert('So... your favorite games are ' + favGames.join(', ') + '.'); */
+// var favGames = [];
+// for (var i = 0; i < 5; i++) {
+//
+//   favGames.push(prompt('Tell me one of your five favorite games?'));
+// }
+//
+// alert('So... your favorite games are ' + favGames.join(', ') + '.');
